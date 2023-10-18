@@ -5,8 +5,6 @@
 
 ## StampO su console, per ogni membro del team, le informazioni di nome, ruolo e la     stringa della foto
 
-  - Ciclo for per andare a prendere ogni oggetto dell'array
-
-  - Ciclo for in per andare a prendere ogni proprietà e corrispettivo valore dell'oggetto
+  - Ciclo for per andare a prendere ogni oggetto dell'array e salvarmi i valori delle proprietà in una variabile
 
   - Stampo in console il risultato

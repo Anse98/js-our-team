@@ -39,19 +39,27 @@ const teamMembers = [
   }
 ]
 
+const outputDOMElement = document.getElementById("output");
+
+
 // MILESTONE 1
+
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
-// Ciclo for per andare a prendere ogni oggetto dell'array
+// Ciclo for per andare a prendere ogni oggetto dell'array e salvarmi i valori delle proprietà in una variabile
 for(let i = 0; i < teamMembers.length; i++) {
-  console.log(i);
-  //Ciclo for in per andare a prendere ogni proprietà e corrispettivo valore dell'oggetto
-  for (const property in teamMembers[i]) {
-    // Stampo in console il risultato
-    console.log(`${property}: ${teamMembers[i][property]}`);
-  }
+  const name = teamMembers[i].nome;
+  console.log(name);
+  const role = teamMembers[i].ruolo;
+  console.log(role);
+  const photo = teamMembers[i].foto;
+  console.log(photo);
 }
+
+// MILESTONE 2
+
+
 
 
 
