@@ -63,7 +63,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   containerDOMElement.innerHTML += `<div class="card-container">
    <div class="member-card p-2">
      <figure>
-       ${photo}
+       <img src ="./img/${photo}">
      </figure>
      <p>${name}</p>
      <p>${role}</p>
