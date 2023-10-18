@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+}
+
+.header-container {
+  max-width: 600px;
+  padding-top: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-container {
+  flex-basis: calc(100% / 3);
+}
+
+
+.member-card figure {
+  max-width: 300px;
+}
