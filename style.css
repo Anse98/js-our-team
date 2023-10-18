@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F5F5F1;
+}
+
 img {
   max-width: 100%;
 }
@@ -15,10 +19,40 @@ img {
   margin: 0 auto;
 }
 
+header h1 {
+  color: #383838;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 26px;
+}
+
+header p {
+  padding-bottom: 20px;
+}
+
+header p,
+.card-description p {
+  color:#7A746E;
+  line-height: 2rem;
+}
+
 .card-container {
   flex-basis: calc(100% / 3);
 }
 
+.card-description {
+  background-color: white;
+  max-width:300px;
+}
+
+.card-description p:first-child {
+  font-weight: 600;
+}
+
+.card-description p:last-child {
+  font-size: 12px;
+  font-style: italic;
+}
 
 .member-card figure {
   max-width: 300px;

@@ -50,24 +50,21 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   const member = teamMembers[i];
 
-  const name = member.nome;
-
-  const role = member.ruolo;
-
-  const photo = member.foto;
-
   // Vado a prendermi dal DOM il container in cui poi concatenerò le stringhe 
   const containerDOMElement = document.querySelector(".container");
 
   // Vado a concatenare col template literal la mia stringa tot volte, che contiene le varie classi e i valori delle proprietà degli oggetti, dentro al container 
-  containerDOMElement.innerHTML += `<div class="card-container">
-   <div class="member-card p-2">
-     <figure>
-       <img src ="./img/${photo}">
+  containerDOMElement.innerHTML += `
+  <div class="card-container">
+    <div class="member-card p-2">
+     <figure class="mb-0">
+       <img src ="./img/${member.foto}">
      </figure>
-     <p>${name}</p>
-     <p>${role}</p>
-   </div>
+     <div class="card-description text-center">
+      <p class="mb-0 pt-2">${member.nome}</p>
+      <p class="mb-0 pb-3">${member.ruolo}</p>
+     </div>
+    </div>
   </div>`;
 }
 
